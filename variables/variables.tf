@@ -4,7 +4,7 @@
 # 4. ENV variables
 variable "ami_id" {
   type = string
-  default = "ami-03265a0778a880afb"
+  default = "ami-0b4f379183e5706b9"
 }
 
 variable "instance_type" {
