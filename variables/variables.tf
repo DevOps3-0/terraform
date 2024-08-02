@@ -15,7 +15,7 @@ variable "instance_type" {
 variable "tags" {
   type = map
   default = {
-    Name = "Hello Terraform"
+    Name = "work-station1"
     Project = "Roboshop"
     Environment = "DEV"
     Component = "Web"

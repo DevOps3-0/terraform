@@ -4,7 +4,7 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = [aws_security_group.roboshop-all.id] # this means list
 
   tags = {
-    Name = "HelloTerraform"
+    Name = "work-station"
   }
 }
 
@@ -16,7 +16,7 @@ resource "aws_security_group" "roboshop-all" { #this is terraform name, for terr
     ingress {
         description      = "Allow All ports"
         from_port        = var.inbound-from-port # 0 means all ports
-        to_port          = 0 
+        to_port          = 65535 
         protocol         = "tcp"
         cidr_blocks      = var.cidr_blocks
         #ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
